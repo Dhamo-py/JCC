@@ -6,29 +6,19 @@
 body{
     height: 100vh;
     width: 100vw;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* .header{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 50vw;
-
-} */
-
 .slogon {
     font-family: cursive;
-    /* font-family: "Satisfy", cursive; */
     font-weight: 400;
     font-style:italic;
     font-size:xx-large;
     text-align: center;
     color: red;
-  }
+}
   
 header{
     background-image: url('https://img.freepik.com/free-photo/fitness-concept-with-dumbbells-frame_23-2148531434.jpg');
@@ -36,18 +26,14 @@ header{
     background-size: cover;
     height: 50px;
     width: 100vw;
-    margin: 0;
-    
+    margin: 0;    
 }
-
 
 .nav{
     
     display: flex;
     flex-direction: row;
-    /* margin: 20px; */
-    
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    align-items: center;
 }
 
 .Name{
@@ -56,7 +42,12 @@ header{
     margin-right: auto;
     font-size: xx-large;
     color: #32CD32;
-    /* background-image: linear-gradient(green, grey, blue); */
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    border: #32CD32 3px solid;
+    padding: 0 3px;
 }
 
 .logo{
@@ -70,16 +61,6 @@ header{
     padding: 10px;
 
 }
-/* .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 15rem;
-    height: 5rem;
-    background-color: aqua;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-  } */
 
 .course{
     background-color: rgba(0, 255, 255, 0.226);
@@ -114,65 +95,7 @@ header{
     height: 70px;
 }
 
-.phone{
-    position: fixed;
-    bottom: 100px;
-    right: 25px;
-    height: 70px;
-    animation-name: phone;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 
-}
-
-/* .anime{
-    animation-name: blinker;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-} */
-
-@keyframes blinker
-{
-    0%{opacity: 5.0;}
-    25%{opacity: 5.0;}
-    50%{opacity: 0.5;}
-    75%{opacity: 0.5;}
-    100%{opacity: 1.5;}
-}
-
-@keyframes phone {
-    0%{transform: scale(0.5);}
-    25%{transform: rotate(-5deg);}
-    50%{transform: rotate(5deg);}
-    75%{transform: rotate(-5deg);}
-    100%{transform: scale(1);}
-}
-
-.badge{
-    background-color: red;
-    color: white;
-    padding: 6px, 4px;
-    text-align: center;
-    border-radius: 5px;
-    font-size: medium;
-    height: 20px;
-    margin: 3px;
-    animation-name: blinker;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes blinker
-{
-    0%{opacity: 5.0;}
-    25%{opacity: 5.0;}
-    50%{opacity: 0.5;}
-    75%{opacity: 0.5;}
-    100%{opacity: 1.5;}
-}
 
 .tution-card{
     background-color: rgba(255, 192, 203, 0.575);
@@ -201,7 +124,6 @@ header{
     border-radius: 20px;
 }
 
-
 .tution{
     display: flex;
     flex-direction: row;
@@ -209,29 +131,6 @@ header{
     justify-content: center;
 }
 
-/* img{
-    height: 50px;
-    animation-name: new1;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-
-/* img:hover{
-    transform: scale(3);
-    transform: rotate(30deg);
-    transform: rotateY(30deg);
-    transition: 1s;
-} */
-
-/* @keyframes new1 {
-    0%{transform: scale(0.5);}
-    25%{transform: rotate(-5deg);}
-    50%{transform: rotate(5deg);}
-    75%{transform: rotate(-5deg);}
-    100%{transform: rotate(0deg);}
-} */ 
 h6{
     background-color: red;
     color: white;
@@ -247,10 +146,74 @@ h6{
 }
 
 .sub{
-    /* display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
     text-align: center;
     list-style: none;
 }
+
+.phone{
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    height: 70px;
+    animation-name: phone;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.badge{
+    background-color: red;
+    color: white;
+    padding: 6px, 4px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: medium;
+    height: 20px;
+    margin: 3px;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes phone {
+    0%{transform: scale(0.5);}
+    25%{transform: rotate(-5deg);}
+    50%{transform: rotate(5deg);}
+    75%{transform: rotate(-5deg);}
+    100%{transform: scale(1);}
+}
+
+@keyframes blinker
+{
+    0%{opacity: 5.0;}
+    25%{opacity: 5.0;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1.5;}
+}
+
+@media (max-width:768px){
+    .Name{
+        font-size: larger;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+        height: 25px;
+        border: #32CD32 3px solid;
+        padding: 0 3px;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+    .Featured-Courses{
+        font-size: x-large;
+    }
+    body{
+        margin: 10px;
+    }
+}
+
+
 
